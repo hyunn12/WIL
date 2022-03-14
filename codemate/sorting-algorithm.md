@@ -61,7 +61,7 @@ BUT **버블정렬은 무조건 O(n^2)의 복잡도** 를 가짐
 ```
 즉, 등차수열의 합에 의해 아래와 같은 연산량 계산됨
 
-<img alt="img_1.png" src="img/img_1.png" width="300"/>
+<img alt="img_1.png" src="img/sorting_img_1.png" width="300"/>
 
 Big-O 표기법은 상수항 제거 -> **O(n^2)** 의 시간 복잡도 가짐
 
@@ -83,45 +83,45 @@ Big-O 표기법은 상수항 제거 -> **O(n^2)** 의 시간 복잡도 가짐
 피벗 PIVOT, 왼쪽 포인터 LEFT, 오른쪽 포인터 RIGHT 사용
 1. 배열에서 임의의 원소 하나를 기준(피벗, pivot)으로 설정
 
-    <img alt="img_2.png" src="img/img_2.png" width="200"/>
+    <img alt="img_2.png" src="img/sorting_img_2.png" width="200"/>
 
 2. 0번 인덱스 위치에 왼쪽(left), 오른쪽(right) 포인터 위치
 
-   <img alt="img_3.png" src="img/img_3.png" width="200"/>
+   <img alt="img_3.png" src="img/sorting_img_3.png" width="200"/>
 
 3. 왼쪽 포인터는 피벗보다 큰 값이, 오른쪽 포인터는 왼쪽 포인터부터 피벗보다 작은 값이 올 때까지 우측으로 이동
 
-    <img alt="img_4.png" src="img/img_4.png" width="200"/>
+    <img alt="img_4.png" src="img/sorting_img_4.png" width="200"/>
 
 4. 왼쪽 포인터와 오른쪽 포인터 값 교환(swap)
 
-   <img alt="img_5.png" src="img/img_5.png" width="200"/>
+   <img alt="img_5.png" src="img/sorting_img_5.png" width="200"/>
 
 5. 교환 후엔 왼쪽, 오른쪽 포인터를 우측으로 한 칸 이동
 
-   <img alt="img_6.png" src="img/img_6.png" width="200"/>
+   <img alt="img_6.png" src="img/sorting_img_6.png" width="200"/>
 
 6. 3번 동일하게 반복
 
-   <img alt="img_7.png" src="img/img_7.png" width="200"/>
+   <img alt="img_7.png" src="img/sorting_img_7.png" width="200"/>
 
 7. 두 값을 스왑하고, 포인터를 우측으로 한 칸 이동
 
-   <img alt="img_8.png" src="img/img_8.png" width="200"/>
+   <img alt="img_8.png" src="img/sorting_img_8.png" width="200"/>
 
 8. 오른쪽 포인터가 pivot에 도달할 때까지 3-5 과정 반복
 
-   <img alt="img_9.png" src="img/img_9.png" width="200"/>
+   <img alt="img_9.png" src="img/sorting_img_9.png" width="200"/>
 
 9. 오른쪽 포인터가 pivot 위치에 도달하면 pivot과 왼쪽 포인터 변경
 
-   <img alt="img_10.png" src="img/img_10.png" width="200"/>
+   <img alt="img_10.png" src="img/sorting_img_10.png" width="200"/>
 
 10. pivot 기준으로 왼쪽, 오른쪽 배열 분리해 각각 퀵정렬 반복 수행
 
 정렬 완료 시 배열을 합쳐 정렬된 결과 리턴
 
-<img alt="img_12.png" src="img/img_12.png" width="200"/>
+<img alt="img_12.png" src="img/sorting_img_12.png" width="200"/>
 
 ### 코드 구현
 ```java
@@ -180,7 +180,7 @@ data의 이동 횟수가 미리 결정
 3. 맨 처음 위치를 뺀 나머지 리스트를 같은 방식으로 교체
 4. 하나의 원소만 남을 때까지 1~3 과정 반복
 
-   <img alt="img_13.png" src="img/img_13.png" width="300"/>
+   <img alt="img_13.png" src="img/sorting_img_13.png" width="300"/>
 
 ### 코드 구현
 ```java
